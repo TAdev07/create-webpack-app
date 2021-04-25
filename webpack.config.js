@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "docs"),
         filename: "bundle.[contenthash].js",
-        publicPath: "/",
+        publicPath: "/react-webpack/",
     },
     mode: "development",
     module: {
