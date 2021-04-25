@@ -7,11 +7,13 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
     //our index file
     entry: path.resolve(__dirname, "src/index.jsx"),
+    //Where we put the production code
     output: {
-        path: path.resolve(__dirname, "docs"),
+        path: path.resolve(__dirname, "dist"),
         filename: "bundle.[contenthash].js",
-        publicPath: "/react-webpack/",
+        publicPath: "/",
     },
+    // This says to webpack that we are in development mode and write the code in webpack file in different way
     mode: "development",
     module: {
         rules: [
